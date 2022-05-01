@@ -1,0 +1,5 @@
+{
+  "Lua.diagnostics.globals": ["imaps", "Player", "Server", "Package"],
+  "lua.targetVersion": "5.3"
+}
+
