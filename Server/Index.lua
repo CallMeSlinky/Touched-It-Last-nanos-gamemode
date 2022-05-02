@@ -57,7 +57,7 @@ function SelectRandomTeam(player)
         SelectRandomTeam(player)
     else
         if #unavailableTeams == 10 or gameStarted then
-            player:SetValue("Team", "Specatator", true)
+            player:SetValue("Team", "Spectator", true)
         else
             unavailableTeams[#unavailableTeams + 1] = randomColour
             player:SetValue("Team", randomColour, true)
@@ -76,11 +76,4 @@ function RemoveTeam(player)
         end
         Package.Log(((("Removed " .. tostring(currentTeam)) .. ": ") .. tostring(#unavailableTeams)) .. " teams taken.")
     end
-end
-
--- Creates Character
-function CreateCharacter()
-    -- Add more custom stuff here
-    local character = Character(Vector(0, 0, 0), Rotator(0, 0, 0), "nanos-world::SK_Female")
-    return character
 end
